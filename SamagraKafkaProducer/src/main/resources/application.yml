@@ -1,0 +1,18 @@
+app:
+  kafka:
+    producer:
+      topic: YellowTripOutbound
+      client-id-config: my-app-readYellowTrip
+      data-file-location: data
+      data-file-name: yellow_tripdata_2021-01.csv
+spring:
+  kafka:
+    bootstrap-servers: 206.189.130.216:9092
+    properties:
+      producer:
+        retries: 0
+        acks: all
+        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+        value-serializer: in.governance.samagra.apps.kafka.producer.config.JsonSerializer
+
+

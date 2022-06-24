@@ -1,0 +1,98 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Oracle Corporation Java 11.0.14)
+[debug]       Load.loadUnit: plugins took 101.802421ms
+[debug]       Load.loadUnit: defsScala took 0.337552ms
+[debug] [Loading] Scanning directory /Users/ashoky/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/ashoky/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 30.807533 ms
+[debug]           Load.resolveProject(global-plugins) took 56.855231ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /Users/ashoky/.sbt/1.0/plugins, plugins: List(<none>))) took 123.681976ms
+[debug] [Loading] Done in /Users/ashoky/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 148.587177ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.328323ms
+[debug]     Load.loadUnit(file:/Users/ashoky/.sbt/1.0/plugins/, ...) took 261.64116ms
+[debug]   Load.apply: load took 757.009891ms
+[debug]   Load.apply: resolveProjects took 7.591677ms
+[debug]   Load.apply: finalTransforms took 66.933287ms
+[debug]   Load.apply: config.delegates took 8.881497ms
+[debug]   Load.apply: Def.make(settings)... took 432.731634ms
+[debug]   Load.apply: structureIndex took 116.658967ms
+[debug]   Load.apply: mkStreams took 2.132595ms
+[info] loading global plugins from /Users/ashoky/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 3092.981622ms
+[debug]           Load.loadUnit: plugins took 21.146926ms
+[debug]           Load.loadUnit: defsScala took 0.008911ms
+[debug] [Loading] Scanning directory /Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine/project
+[debug]             Load.loadUnit: mkEval took 14.271531ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.234121 ms
+[info] loading settings for project datapipeline-build from plugins.sbt ...
+[debug]               Load.resolveProject(datapipeline-build) took 4.85686ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id datapipeline-build, base: /Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine/project, plugins: List(<none>))) took 7.957198ms
+[debug] [Loading] Done in /Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine/project, returning: (datapipeline-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 156.640434ms
+[debug]           Load.loadUnit: cleanEvalClasses took 4.541844ms
+[debug]         Load.loadUnit(file:/Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine/project/, ...) took 183.525597ms
+[debug]       Load.apply: load took 185.421193ms
+[debug]       Load.apply: resolveProjects took 0.126943ms
+[debug]       Load.apply: finalTransforms took 10.752311ms
+[debug]       Load.apply: config.delegates took 0.376105ms
+[debug]       Load.apply: Def.make(settings)... took 69.643649ms
+[debug]       Load.apply: structureIndex took 27.197023ms
+[debug]       Load.apply: mkStreams took 0.002495ms
+[info] loading project definition from /Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 484.94988ms
+[debug]     Load.loadUnit: defsScala took 0.003767ms
+[debug] [Loading] Scanning directory /Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine
+[debug]       Load.loadUnit: mkEval took 0.177678ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbtide.ConfigPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.74207 ms
+[info] loading settings for project datapipeline from build.sbt ...
+[debug]         Load.resolveProject(datapipeline) took 1.544715ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id datapipeline, base: /Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine, plugins: List(<none>))) took 3.821257ms
+[debug] [Loading] Done in /Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine, returning: (datapipeline)
+[debug]     Load.loadUnit: loadedProjectsRaw took 1883.815468ms
+[debug]     Load.loadUnit: cleanEvalClasses took 3.630062ms
+[debug]   Load.loadUnit(file:/Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine/, ...) took 2373.205223ms
+[debug] Load.apply: load took 2374.788721ms
+[debug] Load.apply: resolveProjects took 0.115226ms
+[debug] Load.apply: finalTransforms took 9.632883ms
+[debug] Load.apply: config.delegates took 0.566271ms
+[debug] Load.apply: Def.make(settings)... took 62.641746ms
+[debug] Load.apply: structureIndex took 24.598629ms
+[debug] Load.apply: mkStreams took 0.002393ms
+[info] set current project to dataPipeLine (in build file:/Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine/)
+[warn] there's a key that's not used by any other settings/tasks:
+[warn]  
+[warn] * datapipeline / idePackagePrefix
+[warn]   +- /Users/ashoky/dev/workspaces/sWorkspace/dataPipeLine/build.sbt:7
+[warn]  
+[warn] note: a setting might still be used by a command; to exclude a key from this `lintUnused` check
+[warn] either append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///Users/ashoky/.sbt/1.0/server/8ec4ecca8c5655d96e12/sock
+[info] started sbt server
